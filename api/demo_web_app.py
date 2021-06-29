@@ -105,5 +105,7 @@ def demo_web_app(gpt, config=UIConfig()):
             offset = len(gpt.output_prefix)
         return {'text': response['choices'][0]['text'][offset:]}
 
-    subprocess.Popen(["yarn", "start"])
+    # If you're using Linux/Mac, uncomment the following line and comment the line after it.
+    # subprocess.Popen(["yarn", "start"])
+    subprocess.Popen(["yarn", "start"], shell=True)
     app.run()
