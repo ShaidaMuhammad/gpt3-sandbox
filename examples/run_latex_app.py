@@ -1,10 +1,10 @@
 import os
 import sys
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
 from api import GPT, Example, UIConfig
 from api import demo_web_app
-
 
 # Construct GPT object and show some examples
 gpt = GPT(engine="davinci",
@@ -14,8 +14,8 @@ gpt = GPT(engine="davinci",
 gpt.add_example(Example('Two plus two equals four', '2 + 2 = 4'))
 gpt.add_example(
     Example('The integral from zero to infinity', '\\int_0^{\\infty}'))
-gpt.add_example(Example(
-    'The gradient of x squared plus two times x with respect to x', '\\nabla_x x^2 + 2x'))
+gpt.add_example(
+    Example('The gradient of x squared plus two times x with respect to x', '\\nabla_x x^2 + 2x'))
 gpt.add_example(Example('The log of two times x', '\\log{2x}'))
 gpt.add_example(
     Example('x squared plus y squared plus equals z squared', 'x^2 + y^2 = z^2'))

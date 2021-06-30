@@ -1,6 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 *.cfg
 *venv*
+*messages_and_labels_prepared_for_gpt-3.xlsx*
 
 *pycache*
 
