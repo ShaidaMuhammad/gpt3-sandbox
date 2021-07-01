@@ -20,7 +20,6 @@ df = pd.read_excel('examples/messages_and_labels_prepared_for_gpt-3.xlsx')
 # Iterating row wise on dataframe
 for index, row in df.iterrows():
     gpt.add_example(Example(row['Labels'], row['message']))
-    print((row['Labels'], row['message']))
 
     if index == 30:
         break
